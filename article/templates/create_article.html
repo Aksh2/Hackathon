@@ -1,0 +1,12 @@
+{% extends index.html %}
+
+{% block content %}
+
+<form action="articles/create/" method="post">{% csrf token %}
+<ul>
+	{{form.as_ul}}
+</ul>
+
+<button type="button" class="btn btn-info">Create Article</button>
+</form>
+{% endblock %}

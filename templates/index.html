@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+		Begin Coder - The Right place for all Beginners to Learn Coding
+	</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+		.logo	{padding: 0px 0px; margin: 0px 0px; border: 0px 0px height=0px; }
+		.navbar-brand,
+        .navbar-nav li a {
+    						line-height: 60px;
+    						height: 60px;
+    						padding-top: 0px;
+    						display: inline;
+    						margin-top: 5px;
+						}
+		.logoname		{font-size: 18px; font-weight: bold;}
+		button{ margin-left: 700px;}
+		body {padding-top: 60px;}
+	</style>
+	<script type="text/javascript">
+
+		var width = $(window).width(),
+    	height = $(window).height();
+		if ((width <= 768)) {
+    	$('.navbar').addClass('navbar-fixed-bottom');
+		}
+	</script>
+
+</head>
+<body>
+	
+	 
+	 <nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+		<div class="row">
+		<div class="col col-xs-12">	
+			<div class="navbar-header">
+
+				<a class="navbar-brand" href="index.html">
+					<img src="{% static "assets/Images/mainlogo.png"}" class="logo" width="50px" height="50px">
+				</a>
+				
+			</div>
+		
+
+				<ul class="nav navbar-nav">
+					<li class="active"><a class="logoname" href="#">Begin Coder</a></li>
+					<li ><a href="index.html">Home</a><li>
+					<li><a href="#">C#</a></li>
+					<li><a href="#">Python</a><li>
+				</ul>
+
+
+
+
+	</nav>
+	</div>
+	</div>
+	</div>
+		
+		
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+
+	<div class="container-fluid" >
+		<div class="row">
+		<div class=" col col-md-8 col-xs-12">
+		<div class="well">
+		    
+			{% block content %}{% endblock %}
+			<!--
+			<button type="button" class="btn btn-primary">Read More</button>
+			---->
+		</div>
+		</div>
+
+		<div class="col col-md-4">
+			<div class="well ">
+			<h2>Plugin 1</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac nibh eros. Pellentesque feugiat scelerisque pellentesque. Vestibulum et mauris in dui egestas lacinia eget et dolor. Proin et dui velit. Fusce eu sagittis augue. Proin placerat, enim facilisis tristique elementum, dui lacus tristique orci, in iaculis lectus lorem auctor ligula. Donec lacinia laoreet eros, at aliquet lectus tristique sit amet. Nam accumsan turpis in dui blandit cursus. Cras tincidunt convallis turpis, quis ullamcorper mauris mollis at. Mauris at luctus nisi. Donec id lorem elit, id pellentesque ipsum. Sed commodo dignissim ullamcorper. 
+				Nunc ipsum mi, lobortis eu ultrices quis, laoreet sed est.
+
+			</p>
+		</div>
+		</div>
+
+		<div class="col col-md-4">
+			<div class="well ">
+			<h2>Plugin 2</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac nibh eros. Pellentesque feugiat scelerisque pellentesque. Vestibulum et mauris in dui egestas lacinia eget et dolor. Proin et dui velit. Fusce eu sagittis augue. Proin placerat, enim facilisis tristique elementum, dui lacus tristique orci, in iaculis lectus lorem auctor ligula. Donec lacinia laoreet eros, at aliquet lectus tristique sit amet. Nam accumsan turpis in dui blandit cursus. Cras tincidunt convallis turpis, quis ullamcorper mauris mollis at. Mauris at luctus nisi. Donec id lorem elit, id pellentesque ipsum. Sed commodo dignissim ullamcorper. 
+				Nunc ipsum mi, lobortis eu ultrices quis, laoreet sed est.
+
+			</p>
+		</div>
+		</div>
+		
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+</body>
+</html>
